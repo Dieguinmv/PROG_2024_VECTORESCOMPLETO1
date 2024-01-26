@@ -38,8 +38,8 @@ public class Start {
 					break;
 		
 				case 3:
-					System.out.println("\n"+Vector+"\n");
-					System.out.println("\nLa cantidad de vacios seria-->"+Vector.cuantosEspaciosQueda()+"\n");
+					System.out.println("\n"+Vector.toString()+"\n");
+					System.out.println("La cantidad de vacios seria-->"+Vector.cuantosEspaciosQueda());
 					break;
 			
 				default:

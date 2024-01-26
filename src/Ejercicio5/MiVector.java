@@ -29,11 +29,19 @@ public class MiVector {
 	
 	
 	public String toString() {
-		return Arrays.toString(datos);
+		
+		String devolver = "MiVector [";
+		
+		for(int i =0;i<cuantosHay-1;i++) {
+			devolver += datos[i]+", ";
+		}
+		devolver += datos[cuantosHay-1]+"]";
+		
+		return devolver;
+		
 	}
 	
 	public int cuantosEspaciosQueda() {
-			
 		return datos.length - cuantosHay;
 	}
 	
