@@ -4,17 +4,17 @@ import java.util.Arrays;
 
 public class MiVector {
 	
-	private int vector[];
+	private int datos[];
 	private int cuantosHay;
 	
 	public MiVector(int capacidad) {
 		cuantosHay = 0;
-		vector = new int[capacidad];
+		datos = new int[capacidad];
 	}
 	
 	public int add(int valor) {
 		
-		vector[cuantosHay] = valor;
+		datos[cuantosHay] = valor;
 		cuantosHay++;
 		
 		return cuantosHay;
@@ -22,12 +22,12 @@ public class MiVector {
 	
 	
 	public String toString() {
-		return Arrays.toString(vector);
+		return Arrays.toString(datos);
 	}
 	
 	public int cuantosEspaciosQueda() {
 			
-		return vector.length - cuantosHay;
+		return datos.length - cuantosHay;
 	}
 	
 	
