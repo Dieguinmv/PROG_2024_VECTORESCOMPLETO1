@@ -45,5 +45,27 @@ public class MiVector {
 		return datos.length - cuantosHay;
 	}
 	
+	public int del(int numero) {
+		
+		int posicion = buscar(numero);
+		
+	}
+	
+	private int buscar(int numero) {
+		
+		int devolver =-1;
+		int i = 0;
+		boolean encontrado = false;
+		while((i<cuantosHay) && (!encontrado)) {
+			
+			if(datos[i]== numero) {
+				encontrado = true;
+				devolver = i;
+			}
+			i++;
+		}
+		return devolver;
+		
+	}
 	
 }
