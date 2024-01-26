@@ -14,10 +14,17 @@ public class MiVector {
 	
 	public int add(int valor) {
 		
-		datos[cuantosHay] = valor;
-		cuantosHay++;
+		// si caben mas numeros
+		if(cuantosHay<datos.length) {
+			//coloco donde cuantosHay
+			datos[cuantosHay] = valor;
+			//añado uno mas al contadoe de elmentos
+			cuantosHay++;
+			//devuelvo la posición en la que entró el último
+			return cuantosHay-1;	
+		}
 		
-		return cuantosHay;
+		return -1;
 	}
 	
 	
