@@ -34,7 +34,11 @@ public class Start {
 					System.out.println("\nLa posicion donde lo has colocado--->"+Vector.add(numeroLeido)+"\n");
 					break;
 				case 2:
-					//Borrar un numero
+					System.out.println("\nIntroduce un numero que quieras eliminar\n");
+					int numeroEliminar = teclado.nextInt();
+					Vector.del(numeroEliminar);
+					System.out.println("Borrado con exito");
+					System.out.println("\n"+Vector+"\n");
 					break;
 		
 				case 3:
